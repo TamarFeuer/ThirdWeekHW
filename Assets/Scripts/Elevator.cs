@@ -32,7 +32,9 @@ public class Elevator : MonoBehaviour
 			//Discovered unity can't cope with infinite loops
 			//Tried limiting it with number of cycles, but this too was too hard on unity
 			//Debug.Log ("Elevator goes up until floor number 7 and then all the way down to floor number -1, stopping on each floor"); ?
+   // great discovery. it can cope with them, just need to divide them amongst frames, otherwise it will be one endless frame. try read about coroutines.
 		}
+
 	}
 
 	void Start()
